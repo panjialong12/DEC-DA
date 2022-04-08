@@ -158,7 +158,7 @@ class FcDEC(object):
                     feature_model = Model(self.model.input,
                                           self.model.get_layer(index=int(len(self.model.layers) / 2)).output)
                     features = feature_model.predict(self.x)
-                    km = KMeans(n_clusters=len(np.unique(self.y)), n_init=20, n_jobs=4)
+                    km = KMeans(n_clusters=len(np.unique(self.y)), n_init=20)
                     y_pred = km.fit_predict(features)
                     print(' '*8 + '|==>  acc: %.4f,  nmi: %.4f  <==|'
                           % (metrics.acc(self.y, y_pred), metrics.nmi(self.y, y_pred)))
