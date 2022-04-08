@@ -178,7 +178,7 @@ class FcDEC(object):
                     gen0 = self.datagen.flow(x, shuffle=True, batch_size=batch_size)
                     while True:
                         batch_x = gen0.next()
-                        yield [batch_x, batch_x]
+                        yield (batch_x, batch_x)
                 else:
                     width = int(np.sqrt(x.shape[-1]))
                     if width * width == x.shape[-1]:  # gray
