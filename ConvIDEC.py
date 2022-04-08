@@ -7,7 +7,7 @@ Author:
     Xifeng Guo. 2018.6.30
 """
 
-from tensorflow.keras.models import Model
+from keras.models import Model
 from ConvDEC import ConvDEC
 
 
