@@ -10,12 +10,12 @@ Author:
 from time import time
 import numpy as np
 import platform
-import tensorflow.keras.backend as K
-from tensorflow.keras.layers import Layer, InputSpec, Input, Dense
-from tensorflow.keras.models import Model
-from tensorflow.keras import callbacks
-from tensorflow.keras.initializers import VarianceScaling
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import keras.backend as K
+from keras.layers import Layer, InputSpec, Input, Dense
+from keras.models import Model
+from keras import callbacks
+from keras.initializers import VarianceScaling
+from keras.preprocessing.image import ImageDataGenerator
 from sklearn.cluster import KMeans
 import metrics
 
