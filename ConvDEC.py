@@ -6,9 +6,9 @@ Author:
     Xifeng Guo. 2018.6.30
 """
 
-from tensorflow.keras.layers import Conv2D, Conv2DTranspose, Dense, Flatten, Reshape, InputLayer
-from tensorflow.keras.models import Sequential, Model
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from keras.layers import Conv2D, Conv2DTranspose, Dense, Flatten, Reshape, InputLayer
+from keras.models import Sequential, Model
+from keras.preprocessing.image import ImageDataGenerator
 from FcDEC import FcDEC, ClusteringLayer
 
 
