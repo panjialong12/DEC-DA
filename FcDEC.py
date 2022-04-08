@@ -191,7 +191,7 @@ class FcDEC(object):
                         batch_x = gen0.next()
                         batch_x = np.reshape(batch_x, [batch_x.shape[0], x.shape[-1]])
                         yield (batch_x, batch_x)
-            self.autoencoder.fit_generator(gen(x, batch_size), steps_per_epoch=int(x.shape[0]/batch_size),
+            self.autoencoder.fit(gen(x, batch_size), steps_per_epoch=int(x.shape[0]/batch_size),
                                            epochs=epochs, callbacks=cb, verbose=verbose,
                                            workers=8, use_multiprocessing=True if platform.system() != "Windows" else False)
         print('Pretraining time: ', time() - t0)
